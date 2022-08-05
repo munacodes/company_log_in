@@ -98,22 +98,21 @@ class LogIn extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 50.0,
+              ),
               Expanded(
                 child: Center(
-                  child: Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          "I don't have an account yet.",
-                          style: TextStyle(color: Colors.grey[700]),
-                        ),
-                        Text(
-                          "create one",
-                          style: TextStyle(color: Colors.blue),
-                        ),
-                      ],
-                    ),
+                  child: RichText(
+                    text: TextSpan(
+                        text: "I don't have an account yet.",
+                        style: TextStyle(color: Colors.grey[600]),
+                        children: [
+                          TextSpan(
+                            text: "create one",
+                            style: TextStyle(color: Colors.blue),
+                          ),
+                        ]),
                   ),
                 ),
               ),
